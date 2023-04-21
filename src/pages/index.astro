@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Главная">
+  <div class="flex flex-col items-end">
+    <h1 class="title text-[20rem] font-extrabold">VAYA</h1>
+    <a href="/about" class="intro-animation text-7xl font-bold">О нас →</a>
+  </div>
+</Layout>
+
+<style>
+  .title {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>

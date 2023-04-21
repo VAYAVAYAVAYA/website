@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "@astrojs/image/components";
+
+const team = [
+  [
+    {
+      name: "Alexey Kior",
+      avatar: "https://github.com/alexkior.png",
+      job: "Team Lead",
+    },
+    {
+      name: "Alyona Safonova",
+      avatar: "https://github.com/SafAlyona.png",
+      job: "Project Manager",
+    },
+    {
+      name: "Vadim Stepanov",
+      avatar: "https://github.com/eveloth.png",
+      job: "Back-end Developer",
+    },
+  ],
+  [
+    {
+      name: "Dmitry Melnikov",
+      avatar: "https://github.com/okazaki0yumemi1.png",
+      job: "Back-end Developer",
+    },
+    {
+      name: "Kirill Luzan",
+      avatar: "https://github.com/Yota002.png",
+      job: "Front-end Developer",
+    },
+  ],
+];
+---
+
+<Layout title="Наша команда">
+  <div class="intro-animation flex flex-col items-end">
+    <h1 class="title text-5xl font-extrabold">Наша команда</h1>
+    <div class="mt-12 flex flex-col gap-8 text-xl w-full">
+      {
+        team.map((row) => (
+          <div class="flex justify-evenly">
+            {row.map((member) => (
+              <div class="flex flex-col items-center">
+                <Image
+                  class="border-4 border-gray-800 rounded-full"
+                  src={member.avatar}
+                  format="png"
+                  width={150}
+                  height={150}
+                  alt={member.name + " avatar"}
+                />
+                <p class="mt-2 text-lg font-semibold">{member.name}</p>
+                <p class="text-sm font-light">{member.job}</p>
+              </div>
+            ))}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</Layout>
