@@ -48,7 +48,7 @@
     }
 
     rect {
-    opacity: 0.025;
+    opacity: 0.05;
     }
 
     rect:nth-of-type(2n - 1) {
