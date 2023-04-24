@@ -4,13 +4,15 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Главная">
   <div class="flex flex-col items-center md:items-end">
-    <h1 class="title text-[20vw] font-extrabold">VAYA</h1>
+    <h1 class="title text-[15vw] font-extrabold">VAYA</h1>
     <a href="/about" class="intro-animation text-3xl font-bold">О нас →</a>
   </div>
 </Layout>
 
 <style>
   .title {
+    padding: 0.5rem;
+    font-family: "VAYA";
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;

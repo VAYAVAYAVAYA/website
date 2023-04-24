@@ -31,24 +31,24 @@
 
     @keyframes colorchange {
     0% {
-    fill: #161b22}
-
+    fill: #ededed;
+    }
     25% {
-    fill: #0e4429;
+    fill: #acd5f2;
     }
     50% {
-    fill: #006d32;
+    fill: #7fa8c9;
     }
     75% {
-    fill: #26a641;
+    fill: #527ba0;
     }
     100% {
-    fill: #39d353;
+    fill: #254e77;
     }
     }
 
     rect {
-      opacity: 0.15;
+    opacity: 0.025;
     }
 
     rect:nth-of-type(2n - 1) {
