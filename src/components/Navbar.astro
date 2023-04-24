@@ -13,14 +13,15 @@ const links = [
   class="bg-black text-white flex justify-between items-center h-16 px-[10%] border-b border-[#ffffff22]"
 >
   <a href="/">
-    <Image
+    <h1 class="title">VAYA</h1>
+    <!-- <Image
       class="logo"
       src="/vaya.svg"
       format="svg"
       width={100}
       height={24}
       alt="VAYA Logo"
-    />
+    /> -->
   </a>
   <ul class="hidden sm:flex gap-5 items-center">
     {
@@ -76,8 +77,9 @@ const links = [
     /* inset: 0; */
   }
 
-  .logo {
-    filter: invert(1);
+  .title {
+    font-family: "VAYA";
+    font-size: 1.5rem;
   }
 
   .gradient:hover {
