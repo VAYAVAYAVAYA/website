@@ -1,0 +1,102 @@
+<svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="10" height="10" rx="2" fill="#161B22" />
+  <rect y="13" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="13" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="13" y="13" width="10" height="10" rx="2" fill="#161B22" />
+  <rect y="26" width="10" height="10" rx="2" fill="#161B22" />
+  <rect y="39" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="13" y="26" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="13" y="39" width="10" height="10" rx="2" fill="#161B22" />
+  <rect y="52" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="13" y="52" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="26" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="26" y="13" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="39" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="39" y="13" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="26" y="26" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="26" y="39" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="39" y="26" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="39" y="39" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="52" y="13" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="52" y="26" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="52" y="39" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="26" y="52" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="39" y="52" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="52" width="10" height="10" rx="2" fill="#161B22" />
+  <rect x="52" y="52" width="10" height="10" rx="2" fill="#161B22" />
+
+
+  <style>
+
+    @keyframes colorchange {
+    0% {
+    fill: #161b22}
+
+    25% {
+    fill: #0e4429;
+    }
+    50% {
+    fill: #006d32;
+    }
+    75% {
+    fill: #26a641;
+    }
+    100% {
+    fill: #39d353;
+    }
+    }
+
+    rect {
+      opacity: 0.15;
+    }
+
+    rect:nth-of-type(2n - 1) {
+    animation: colorchange 3s 0.5s infinite alternate;
+    }
+
+    rect:nth-of-type(2n) {
+    animation: colorchange 2.5s 1.5s both infinite alternate;
+    }
+
+    rect:nth-of-type(3n) {
+    animation: colorchange 1s .75s both infinite alternate;
+    }
+
+    rect:nth-of-type(4n) {
+    animation: colorchange 2s 1s both infinite alternate;
+    }
+
+    rect:nth-of-type(5n) {
+    animation: colorchange 1.75s .5s both infinite alternate;
+    }
+
+    rect:nth-of-type(6n) {
+    animation: colorchange 2s 1.5s both infinite alternate;
+    }
+
+    rect:nth-of-type(7n - 1) {
+    animation: colorchange 3s 0.5s infinite alternate;
+    }
+
+    rect:nth-of-type(8n) {
+    animation: colorchange 2.5s 1.5s both infinite alternate;
+    }
+
+    rect:nth-of-type(9n) {
+    animation: colorchange 1s .75s both infinite alternate;
+    }
+
+    rect:nth-of-type(10n) {
+    animation: colorchange 2s 1s both infinite alternate;
+    }
+
+    rect:nth-of-type(11n) {
+    animation: colorchange 1.75s .5s both infinite alternate;
+    }
+
+    rect:nth-of-type(12n) {
+    animation: colorchange 2s 1.5s both infinite alternate;
+    }
+  </style>
+</svg>

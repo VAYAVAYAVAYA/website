@@ -3,61 +3,55 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "@astrojs/image/components";
 
 const team = [
-  [
-    {
-      name: "Alexey Kior",
-      github: "https://github.com/alexkior",
-      job: "Team Lead",
-    },
-    {
-      name: "Alyona Safonova",
-      github: "https://github.com/SafAlyona",
-      job: "Project Manager",
-    },
-    {
-      name: "Vadim Stepanov",
-      github: "https://github.com/eveloth",
-      job: "Back-end Developer",
-    },
-  ],
-  [
-    {
-      name: "Dmitry Melnikov",
-      github: "https://github.com/okazaki0yumemi1",
-      job: "Back-end Developer",
-    },
-    {
-      name: "Kirill Luzan",
-      github: "https://github.com/Yota002",
-      job: "Front-end Developer",
-    },
-  ],
+  {
+    name: "Alexey Kior",
+    github: "https://github.com/alexkior",
+    job: "Team Lead",
+  },
+  {
+    name: "Alyona Safonova",
+    github: "https://github.com/SafAlyona",
+    job: "Project Manager",
+  },
+  {
+    name: "Vadim Stepanov",
+    github: "https://github.com/eveloth",
+    job: "Back-end Developer",
+  },
+  {
+    name: "Dmitry Melnikov",
+    github: "https://github.com/okazaki0yumemi1",
+    job: "Back-end Developer",
+  },
+  {
+    name: "Kirill Luzan",
+    github: "https://github.com/Yota002",
+    job: "Front-end Developer",
+  },
 ];
 ---
 
 <Layout title="Наша команда">
-  <div class="intro-animation flex flex-col items-end">
-    <h1 class="title text-5xl font-extrabold">Наша команда</h1>
+  <div class="intro-animation flex flex-col items-center tet-center">
+    <h1 class="title text-center text-5xl font-extrabold">Наша команда</h1>
 
-    <div class="mt-12 flex flex-col gap-8 text-xl w-full">
+    <div
+      class="mt-4 w-full max-w-3xl grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3"
+    >
       {
-        team.map((row) => (
-          <div class="flex justify-evenly">
-            {row.map((member) => (
-              <a href={member.github} class="flex flex-col items-center">
-                <Image
-                  class="border-4 border-gray-800 rounded-full"
-                  src={`${member.github}.png`}
-                  format="png"
-                  width={150}
-                  height={150}
-                  alt={member.name + " avatar"}
-                />
-                <p class="mt-2 text-lg font-semibold">{member.name}</p>
-                <p class="text-sm font-light">{member.job}</p>
-              </a>
-            ))}
-          </div>
+        team.map((member) => (
+          <a href={member.github} class="flex flex-col items-center">
+            <Image
+              class="border-4 border-gray-800 rounded-full"
+              src={`${member.github}.png`}
+              format="png"
+              width={150}
+              height={150}
+              alt={member.name + " avatar"}
+            />
+            <p class="mt-2 text-lg font-semibold">{member.name}</p>
+            <p class="text-sm font-light">{member.job}</p>
+          </a>
         ))
       }
     </div>
